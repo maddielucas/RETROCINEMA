@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>SigninServlet</servlet-name>
+        <servlet-class>com.mvc.controller.SigninServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SigninServlet</servlet-name>
+        <url-pattern>/SigninServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.mvc.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegistrationEmailServlet</servlet-name>
+        <servlet-class>com.mvc.controller.RegistrationEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationEmailServlet</servlet-name>
+        <url-pattern>/RegistrationEmailServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>forgotPassServlet</servlet-name>
+        <servlet-class>com.mvc.controller.forgotPassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgotPassServlet</servlet-name>
+        <url-pattern>/forgotPassServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>recoverPassEmailServlet</servlet-name>
+        <servlet-class>com.mvc.controller.recoverPassEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>recoverPassEmailServlet</servlet-name>
+        <url-pattern>/recoverPassEmailServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Authentication</servlet-name>
+        <servlet-class>com.mvc.controller.Authentication</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.mvc.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>loadMovies</servlet-name>
+    <servlet-class>com.mvc.controller.loadMovies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loadMovies</servlet-name>
+        <url-pattern>/loadMovies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loadMovieInfo</servlet-name>
+        <servlet-class>com.mvc.controller.loadMovieInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loadMovieInfo</servlet-name>
+        <url-pattern>/loadMovieInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>processTicketServlet</servlet-name>
+        <servlet-class>com.mvc.controller.processBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>processTicketServlet</servlet-name>
+        <url-pattern>/processTicketServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>selectSeatsServlet</servlet-name>
+        <servlet-class>com.mvc.controller.selectSeatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selectSeatsServlet</servlet-name>
+        <url-pattern>/selectSeatsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AuthenticationforMovie</servlet-name>
+        <servlet-class>com.mvc.controller.AuthenticationforMovie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthenticationforMovie</servlet-name>
+        <url-pattern>/AuthenticationforMovie</url-pattern>
+    </servlet-mapping>
+</web-app>

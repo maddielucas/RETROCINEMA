@@ -1,0 +1,23 @@
+#search{
+    width:auto;
+    padding-bottom:1em;
+}
+
+.moviePoster{
+
+}
+
+.row{
+    height: 300px;
+    width: 40em;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.movieDescription{
+
+}
+
+.movieTitleLink{
+
+}

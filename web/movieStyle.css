@@ -1,0 +1,44 @@
+.row{
+ display: flex;
+}
+
+.item {
+    flex: 33.33%;
+    height: 220px;
+    width: 160px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.moviePoster{
+    margin-left: 1em;
+    height: 209px;
+    width: 140px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
+}
+.movieTitleLink{
+    margin-left: 1em;
+    float: bottom;
+    width: 140px;
+    height: 20px;
+    text-align: center;
+
+}
+
+
+
+.movieDescription{
+    height: 170px;
+    width: 320px;
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: auto;
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+}
