@@ -25,6 +25,12 @@ public class selectSeatsServlet extends HttpServlet {
         int MinorTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("minorTicketNo")));
         String title = String.valueOf(request.getAttribute("title"));
 
+        HttpSession session=request.getSession();
+        String email = String.valueOf(session.getAttribute("email"));
+        RegisteredUser user = new RegisteredUser();
+        int UID = user.getIDNum(email);
+
+
         Showings showTimes = new Showings();
         ArrayList<Showings> showingsList = showTimes.retrieveShowingsForMovie(title);
 
@@ -40,6 +46,7 @@ public class selectSeatsServlet extends HttpServlet {
         String SeatsHTML = "";
         int i = 0;
 
+        //building HTML radio buttons for selecting seats
         for(Seat s : allSeats){
             if(i==5){
                 SeatsHTML += "<br>";
@@ -48,6 +55,13 @@ public class selectSeatsServlet extends HttpServlet {
                         "<label for=\"" + i + "\">" + i + "</label>";
             i++;
         }
+
+
+        Bookings booking = new Bookings();
+        booking.setNumOfTickets(totalTickets);
+        booking.setShowingID(SID);
+        booking.setUserID(UID);
+        request.setAttribute("Booking", booking);
 
         request.setAttribute("SID",SID);
         request.setAttribute("seniorTicketNo", SeniorTicketNo);
